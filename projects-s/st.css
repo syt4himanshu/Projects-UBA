@@ -1,0 +1,841 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Handjet:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap");
+/*font-family: "Josefin Sans", sans-serif;*/
+/*font-family: "Alfa Slab One", serif;*/
+
+body {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.College_Mission_Info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.College_Logo img {
+  height: 110px;
+  width: 110px;
+}
+
+.UBA_Logo img {
+  height: 130px;
+  width: 130px;
+}
+
+.College_NamePlate {
+  font-family: "Alfa Slab One", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.College_NamePlate h1 {
+  color: #f7c336;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.College_NamePlate p {
+  line-height: 16px;
+}
+
+.College_NamePlate b {
+  font-weight: 100;
+  font-size: 16px;
+  color: #394666;
+}
+
+.College_NamePlate span {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c91d6;
+  height: 6rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.menu-icon {
+    display: none; /* Hide menu icon on larger screens */
+    cursor: pointer;
+  }
+  
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+footer {
+  background-color: #394666;
+  padding: 20px;
+  display: flex;
+  margin-top: 40px;
+}
+
+footer > div {
+  width: 20%;
+  padding: 20px;
+  text-align: left;
+  color: white;
+}
+
+iframe {
+  width: 30%;
+  border-radius: 10px;
+  border: 2px solid white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.College_Details {
+  padding: 20px;
+  width: 30%;
+  font-size: 16px;
+  color: white;
+}
+
+.Links a {
+  color: white;
+}
+
+.Links,
+.College_Details b {
+  color: #2c91d6;
+}
+
+.Footer_Copyright {
+  height: 5rem;
+  background-color: #2c91d6;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 18px;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+  }
+  
+  .project {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 1.5rem;
+  }
+  
+  .photo-container {
+    background-color: #ffe066;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    min-width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .photo-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .photo-container h1 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .photo-container p {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    color: #333;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .text-content h2 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .text-content p {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+  
+    .photo-container {
+        width: 100%;
+    }
+  
+    .text-content {
+        width: 100%;
+    }
+  
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .project {
+        padding: 1rem;
+    }
+  
+    .photo-container {
+        padding: 0.75rem;
+    }
+  
+    .text-content {
+        padding: 0.75rem;
+    }
+  
+    header {
+        margin: 1rem;
+    }
+  }
+  
+  @media print {
+    .project {
+        break-inside: avoid;
+        box-shadow: none;
+    }
+  
+    nav {
+        display: none;
+    }
+  }
+
+
+
+
+
+
+/* Android */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .College_Mission_Info {
+    display: inline-block;
+  }
+
+  .College_Logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .UBA_Logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .College_Mission_Info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .College_Logo img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .UBA_Logo img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .College_NamePlate h1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .College_NamePlate p {
+    line-height: 12px;
+  }
+
+  .College_NamePlate b {
+    font-weight: 100;
+    font-size: 12px;
+    color: #394666;
+  }
+
+  .College_NamePlate span {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 8px;
+  }
+
+  nav {
+    display: inline-block;
+    height: 80%;
+    width: 100%;
+  }
+  .menu-icon {
+    display: block;
+}
+
+  .menuBar {
+    cursor: pointer;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+  nav ul {
+    border: 2px solid #2c91d6;
+    border-top-color: white;
+    width: 90%;
+    height: 80%;
+    display: none;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+    z-index: 1;
+  }
+
+  @keyframes menuDrop {
+    0% {
+      opacity: 0;
+      transform: scaleY(0.1);
+    }
+    50% {
+      opacity: 1;
+      transform: scaleY(1.1);
+    }
+    70% {
+      transform: scaleY(0.95);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  nav li {
+    text-align: center;
+    width: 80%;
+  }
+
+  nav ul > li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3),
+  li:nth-child(4) {
+    border: 1px solid #2c91d6;
+    border-bottom-color: white;
+  }
+
+  .About_Us {
+    padding: 20px;
+  }
+
+  .About_Us p {
+    font-size: 16px;
+  }
+
+  .Image_Text {
+    display: inline;
+  }
+
+  .Image_Text #Image_One,
+  #Image_Two {
+    background-image: url("../images/College_Information/College_Middle_Part.jpg");
+    height: 350px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .Text {
+    padding-right: 20px;
+    font-size: 16px;
+  }
+
+  .Text_two {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+
+  .Image_Text_two {
+    flex-direction: column-reverse;
+  }
+
+  .Image_Text_two > div {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer > div {
+    width: 80%;
+  }
+  .College_Details {
+    width: 90%;
+    text-align: justify;
+  }
+  iframe {
+    width: 80%;
+  }
+
+  .Vilages_Intigration {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .Vilages_Intigration h2 {
+    font-size: 18px;
+  }
+
+  .Vilages_Intigration p {
+    font-size: 16px;
+  }
+
+  .Footer_Copyright {
+    font-size: 12px;
+  }
+
+  .Links a {
+    font-size: 14px;
+  }
+
+  .ImageGroup_VillageName > div {
+    height: 160px;
+    width: 70%;
+    margin: 10px;
+  }
+
+  .ImageGroup_VillageName {
+    flex-direction: column;
+  }
+
+  .ImageGroup_Faculty {
+    display: inline;
+  }
+
+  .ImageGroup_Faculty > div {
+    width: 100%;
+  }
+
+  .Image_Slider {
+    height: 16rem;
+  }
+
+  .Navigation_Button input[type="button"] {
+    font-size: 14px;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .College_NamePlate {
+    align-items: center;
+  }
+
+  .College_Mission_Info {
+    display: inline;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .College_Logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .UBA_Logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .College_Mission_Info {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .College_NamePlate {
+    width: 100%;
+  }
+
+  .College_Logo img {
+    height: 110px;
+    width: 110px;
+  }
+
+  .UBA_Logo img {
+    height: 126px;
+    width: 126px;
+  }
+
+  .College_NamePlate h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .College_NamePlate p {
+    line-height: 16px;
+  }
+
+  .College_NamePlate b {
+    font-weight: 100;
+    font-size: 14px;
+    color: #394666;
+  }
+
+  .College_NamePlate span {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10px;
+  }
+
+  nav {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .menuBar {
+    cursor: pointer;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+  nav ul {
+    border: 2px solid #2c91d6;
+    border-top-color: white;
+    width: 100%;
+    height: 80%;
+    display: none;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+    z-index: 1;
+  }
+
+  @keyframes menuDrop {
+    0% {
+      opacity: 0;
+      transform: scaleY(0.1);
+    }
+    50% {
+      opacity: 1;
+      transform: scaleY(1.1);
+    }
+    70% {
+      transform: scaleY(0.95);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  nav li {
+    text-align: center;
+    width: 84%;
+  }
+
+  nav ul > li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3),
+  li:nth-child(4) {
+    border: 1px solid #2c91d6;
+    border-bottom-color: white;
+  }
+
+  .About_Us {
+    padding: 20px;
+  }
+
+  .Image_Text {
+    display: inline;
+  }
+
+  .Image_Text #Image_One,
+  #Image_Two {
+    background-image: url("../images/College_Information/College_Middle_Part.jpg");
+    height: 350px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .Text {
+    padding-right: 20px;
+  }
+
+  .Text_two {
+    padding-left: 16px;
+  }
+
+  .Image_Text_two {
+    flex-direction: column-reverse;
+  }
+  .Image_Text_two > div {
+    width: 94%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer > .College_Details,
+  .Links {
+    width: 80%;
+  }
+
+  iframe {
+    width: 50%;
+  }
+
+  .Vilages_Intigration {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .ImageGroup_VillageName {
+    flex-wrap: wrap;
+  }
+
+  .ImageGroup_VillageName > div {
+    height: 160px;
+    width: 50%;
+    margin: 10px;
+  }
+  .ImageGroup_Faculty {
+    flex-wrap: wrap;
+  }
+
+  .ImageGroup_Faculty > div {
+    width: 40%;
+  }
+  .Image_Slider {
+    height: 20rem;
+  }
+
+  .Navigation_Button input[type="button"] {
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+  }
+
+
+  
+}
+
+@media (min-width: 834px) and (max-width: 1024px) {
+  .About_Us p {
+    font-size: 8px;
+  }
+
+  .About_Us h3 {
+    font-size: 14px;
+  }
+
+  .About_SVPCET-t h3 {
+    font-size: 14px;
+  }
+
+  .About_SVPCET-t .Text {
+    font-size: 8px;
+  }
+
+  .Vilages_Intigration h2 {
+    font-size: 14px;
+  }
+
+  .Vilages_Intigration p {
+    font-size: 8px;
+  }
+
+  .ImageGroup_VillageName {
+    flex-wrap: wrap;
+  }
+
+  .ImageGroup_VillageName > div {
+    height: 160px;
+    margin: 10px;
+    width: 36%;
+  }
+
+  .ImageGroup_Faculty {
+    flex-direction: wrap;
+  }
+
+  .ImageGroup_Faculty > div {
+    width: 60%;
+  }
+
+  .Image_Slider {
+    height: 26rem;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 849px) {
+  .Image_Text #Image_One,
+  #Image_Two {
+    background-image: url("../images/College_Information/College_Middle_Part.jpg");
+    height: 300px;
+    width: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 40%;
+  }
+
+  .College_Details,
+  .Links {
+    width: 80%;
+  }
+
+  .ImageGroup_VillageName {
+    flex-wrap: wrap;
+  }
+
+  .ImageGroup_VillageName > div {
+    height: 160px;
+    width: 50%;
+    margin: 10px;
+  }
+
+  .ImageGroup_Faculty {
+    flex-direction: wrap;
+  }
+
+  .ImageGroup_Faculty > div {
+    width: 60%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 848px) {
+  .Text {
+    padding-top: 16px;
+  }
+  .Text_two {
+    padding-top: 20px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer > .College_Details,
+  .Links,
+  iframe {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1424px) and (max-width: 1800px) {
+  section {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 2300px) {
+  section,
+  footer {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
